@@ -9,8 +9,32 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="questionLayout1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/Q1Layout</item>
+    </style>
+
+    <style name="questionLayout2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/Q2Layout</item>
+    </style>
+
+    <style name="questionLayout3">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/Q3Layout</item>
+    </style>
+
     <style name="Questions">
          <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
 
 
     </style>

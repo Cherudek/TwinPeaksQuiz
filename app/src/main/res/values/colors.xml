@@ -3,4 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="Q1Layout">#d32f2f</color>
+    <color name="Q2Layout">#ff9800</color>
+    <color name="Q3Layout">#303f9f</color>
 </resources>

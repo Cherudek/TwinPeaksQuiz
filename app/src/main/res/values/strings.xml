@@ -4,4 +4,13 @@
     <string name="twin_peaks_title">Twin Peaks Quiz</string>
     <string name="catherine_martell">Catherine Martell</string>
     <string name="pete_martell">Pete Martell</string>
+    <string name="apple">Apple</string>
+    <string name="cherry">Cherry</string>
+    <string name="peach">Peach</string>
+    <string name="Q2">What is Agent Dale Cooper\'s favourite pie?</string>
+    <string name="submit_answers">Submit Answers</string>
+    <string name="results">Results</string>
+    <string name="Q3">Who are the Suspects of Killing Laura Palmer?</string>
+    <string name="bobby_briggs">Bobby Briggs</string>
+
 </resources>

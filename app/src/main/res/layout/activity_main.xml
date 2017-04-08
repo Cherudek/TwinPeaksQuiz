@@ -14,26 +14,18 @@
         <!--  Title Section   -->
 
         <ImageView
-            android:background="@drawable/twin_peaks_title"
             android:layout_width="match_parent"
-            android:scaleType="centerCrop"
             android:layout_height="120dp"
-            />
+            android:background="@drawable/twin_peaks_title"
+            android:scaleType="centerCrop" />
 
         <!--  Question 1 Section   -->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#d32f2f"
-            android:orientation="vertical">
+        <LinearLayout style="@style/questionLayout1">
 
             <TextView
                 android:id="@+id/Q1"
                 style="@style/Questions"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="10dp"
                 android:text="@string/Q1" />
 
             <ImageView
@@ -47,30 +39,106 @@
                 android:id="@+id/Answers1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:layout_marginTop="16dp"
                 android:orientation="vertical">
 
                 <RadioButton
-                    style="@style/RadioButtons"
                     android:id="@+id/Q1_R1"
-                    android:text="@string/catherine_martell"
-                    />
+                    style="@style/RadioButtons"
+                    android:text="@string/catherine_martell" />
 
                 <RadioButton
-                    style="@style/RadioButtons"
                     android:id="@+id/Q1_R2"
-                    android:text="@string/pete_martell"
-                     />
+                    style="@style/RadioButtons"
+                    android:text="@string/pete_martell" />
 
                 <RadioButton
-                    style="@style/RadioButtons"
                     android:id="@+id/Q1_R3"
-                    android:text="Leo Johnson"
-                     />
+                    style="@style/RadioButtons"
+                    android:text="Leo Johnson" />
             </RadioGroup>
 
 
         </LinearLayout>
+
+        <!--  Question 2 Section   -->
+
+        <LinearLayout style="@style/questionLayout2">
+
+            <TextView
+                android:id="@+id/Q2"
+                style="@style/Questions"
+                android:text="@string/Q2" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dale_cooper" />
+
+            <RadioGroup
+                android:id="@+id/Answers2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Q2_R1"
+                    style="@style/RadioButtons"
+                    android:text="@string/apple" />
+
+                <RadioButton
+                    android:id="@+id/Q2_R2"
+                    style="@style/RadioButtons"
+                    android:text="@string/cherry" />
+
+                <RadioButton
+                    android:id="@+id/Q2_R3"
+                    style="@style/RadioButtons"
+                    android:text="@string/peach" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <!--  Question 3 Section   -->
+
+        <LinearLayout style="@style/questionLayout3">
+
+            <TextView
+                android:id="@+id/Q3"
+                style="@style/Questions"
+                android:text="@string/Q3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/suspects" />
+
+            <CheckBox
+
+                android:id="@+id/checkbox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bobby_briggs"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:onClick="submitQuiz"
+            android:text="@string/submit_answers" />
 
     </LinearLayout>
 </ScrollView>
