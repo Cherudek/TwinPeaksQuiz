@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Twin Peaks Quiz</string>
+    <string name="Q1">Who discovers Laura Palmer\'s body in the very first episode of Twin Peaks?</string>
+    <string name="twin_peaks_title">Twin Peaks Quiz</string>
+    <string name="catherine_martell">Catherine Martell</string>
+    <string name="pete_martell">Pete Martell</string>
+</resources>

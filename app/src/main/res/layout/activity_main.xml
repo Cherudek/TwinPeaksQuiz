@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--  Title Section   -->
+
+        <ImageView
+            android:background="@drawable/twin_peaks_title"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="120dp"
+            />
+
+        <!--  Question 1 Section   -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#d32f2f"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Q1"
+                style="@style/Questions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/Q1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/laura_palmer_body" />
+
+            <RadioGroup
+
+                android:id="@+id/Answers1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    style="@style/RadioButtons"
+                    android:id="@+id/Q1_R1"
+                    android:text="@string/catherine_martell"
+                    />
+
+                <RadioButton
+                    style="@style/RadioButtons"
+                    android:id="@+id/Q1_R2"
+                    android:text="@string/pete_martell"
+                     />
+
+                <RadioButton
+                    style="@style/RadioButtons"
+                    android:id="@+id/Q1_R3"
+                    android:text="Leo Johnson"
+                     />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
