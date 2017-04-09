@@ -6,4 +6,6 @@
     <color name="Q1Layout">#d32f2f</color>
     <color name="Q2Layout">#ff9800</color>
     <color name="Q3Layout">#303f9f</color>
+    <color name="Q4Layout">#388e3c</color>
+    <color name="textColorWhite">#fafafa</color>
 </resources>

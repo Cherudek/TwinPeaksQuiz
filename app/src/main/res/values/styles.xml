@@ -30,27 +30,53 @@
         <item name="android:background">@color/Q3Layout</item>
     </style>
 
+    <style name="questionLayout4">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/Q4Layout</item>
+    </style>
+
+
+
+
     <style name="Questions">
          <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">16dp</item>
-
-
     </style>
 
     <style name="MyTextViewStyle" parent="android:Widget.TextView">
-        <item name="android:textColor">#fafafa</item>
+        <item name="android:textColor">@color/textColorWhite</item>
     </style>
 
     <style name="RadioButtons">
 
-        <item name="android:textColor">#fafafa</item>
+        <item name="android:textColor">@color/textColorWhite</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:buttonTint">#fafafa</item>
+        <item name="android:buttonTint">@color/textColorWhite</item>
     </style>
+
+    <style name="CheckBox">
+        <item name="android:textColor">@color/textColorWhite</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="EditView">
+        <item name="android:textColor">@color/textColorWhite</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+
 
 
 

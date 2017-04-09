@@ -8,9 +8,11 @@
     <string name="cherry">Cherry</string>
     <string name="peach">Peach</string>
     <string name="Q2">What is Agent Dale Cooper\'s favourite pie?</string>
-    <string name="submit_answers">Submit Answers</string>
+    <string name="submit_answers">Submit Your Answers</string>
     <string name="results">Results</string>
     <string name="Q3">Who are the Suspects of Killing Laura Palmer?</string>
     <string name="bobby_briggs">Bobby Briggs</string>
+    <string name="Q4">What is the population count on Twin Peaks town sign which appeared every episode?</string>
+    <string name="population_no">__.___</string>
 
 </resources>

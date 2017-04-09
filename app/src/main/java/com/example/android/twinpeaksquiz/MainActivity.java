@@ -3,6 +3,7 @@ package com.example.android.twinpeaksquiz;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
@@ -24,7 +25,10 @@ public class MainActivity extends AppCompatActivity {
     String incorrect = "Incorrect";
     String message1;
     String message2;
-    public int totalQuestions = 6;
+    String message3;
+    String message4;
+    String population = "51.201";
+    public int totalQuestions = 4;
     public int totalCorrectAnswered = 0;
 
     /**
@@ -59,13 +63,20 @@ public class MainActivity extends AppCompatActivity {
         RadioButton Q2radioButton3 = (RadioButton) findViewById(R.id.Q2_R3);
         boolean quest2Answer3 = Q2radioButton3.isChecked();
 
+        //Quiz 3 Answer 3
+        EditText population = (EditText) findViewById(R.id.population);
+        String populationNumber = population.getText().toString();
+
 
         checkAnswer1(quest1Answer1, quest1Answer2, quest1Answer3);
         checkAnswer2(quest2Answer1, quest2Answer2, quest2Answer3);
+        checkAnswer3();
+        checkAnswer4(populationNumber);
 
         String message = "Total Score: " + totalCorrectAnswered + " out of " + totalQuestions + "\n";
         message += "\nQ1: " + message1;
         message += "\nQ2: " + message2;
+        message += "\nQ4: " + message4;
         displayMessage(message);
 
     }
@@ -96,7 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      *
-     * This Method checks whether the Question 2 Answers are correct or not
+     * This Method checks whether Question 2 Answers are correct or not
      *
      * @param quest2Answer1  Answer 1
      * @param quest2Answer2  Answer 2
@@ -116,9 +127,34 @@ public class MainActivity extends AppCompatActivity {
         return message2;
     }
 
+    /**
+     *
+     * This method checks whether Question 3 is correct
+     *
+     */
+
+
 
     /**
-     * This Method Display the Result of The Quiz
+     *
+     * This method checks whether Question 4 is correct
+     *
+     */
+
+    public String checkAnswer4 (String populationNumber ) {
+
+        if (populationNumber == population) {
+            message4 = correct;
+            totalCorrectAnswered++;
+        } else {
+            message4 = incorrect;
+        }
+           return message4;
+    }
+
+
+    /**
+     * This Method Displays the Result of The Quiz
      * @param message is the message of all the Answers
      */
 
@@ -127,8 +163,6 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
         toast.show();
 
-//        TextView orderSummaryTextView = (TextView) findViewById(R.id.results);
-//        orderSummaryTextView.setText(message);
     }
 
 }

@@ -120,20 +120,79 @@
                 android:src="@drawable/suspects" />
 
             <CheckBox
-
                 android:id="@+id/checkbox1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/bobby_briggs"
-                android:textAppearance="?android:textAppearanceMedium" />
+                style="@style/CheckBox"
+                android:text="@string/bobby_briggs" />
+
+            <CheckBox
+                android:id="@+id/checkbox2"
+                style="@style/CheckBox"
+                android:text="Nadine Hurley" />
+
+            <CheckBox
+                android:id="@+id/checkbox3"
+                style="@style/CheckBox"
+                android:text="Dr Laurence Jacoby" />
+
+            <CheckBox
+                android:id="@+id/checkbox4"
+                style="@style/CheckBox"
+                android:text="Leo Johnson" />
+
+            <CheckBox
+                android:id="@+id/checkbox5"
+                style="@style/CheckBox"
+                android:text="Shelly Johnson" />
+
+            <CheckBox
+                android:id="@+id/checkbox6"
+                style="@style/CheckBox"
+                android:text="Benjamin Horne" />
+
+            <CheckBox
+                android:id="@+id/checkbox7"
+                style="@style/CheckBox"
+                android:text="Bob" />
+
+            <CheckBox
+                style="@style/CheckBox"
+                android:id="@+id/checkbox8"
+                android:text="The Log Lady"/>
 
 
         </LinearLayout>
 
+    <!--  Question 4 Section   -->
+
+    <LinearLayout style="@style/questionLayout4">
+
+        <TextView
+            android:id="@+id/Q4"
+            style="@style/Questions"
+            android:text="@string/Q4"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/wellcome_twinpeaks" />
+
+        <EditText
+            android:textColor="#fafafa"
+            android:id="@+id/population"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/population_no"
+            android:inputType="phone" />
+
+        </LinearLayout>
+
+
+
 
         <Button
             android:id="@+id/submit"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
