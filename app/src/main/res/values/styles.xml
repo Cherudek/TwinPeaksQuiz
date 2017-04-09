@@ -9,6 +9,10 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="MyTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/textColorWhite</item>
+    </style>
+
     <style name="questionLayout1">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -47,12 +51,13 @@
         <item name="android:padding">16dp</item>
     </style>
 
-    <style name="MyTextViewStyle" parent="android:Widget.TextView">
-        <item name="android:textColor">@color/textColorWhite</item>
+    <style name="images">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:scaleType">centerCrop</item>
     </style>
 
     <style name="RadioButtons">
-
         <item name="android:textColor">@color/textColorWhite</item>
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
         <item name="android:layout_width">wrap_content</item>
@@ -74,6 +79,19 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">phone</item>
+    </style>
+
+    <style name="submitButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">submitQuiz</item>
+        <item name="android:background">@color/Red700</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
 

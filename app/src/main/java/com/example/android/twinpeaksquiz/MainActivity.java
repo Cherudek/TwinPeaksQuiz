@@ -3,6 +3,7 @@ package com.example.android.twinpeaksquiz;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         RadioButton radioButton3 = (RadioButton) findViewById(R.id.Q1_R3);
         boolean quest1Answer3 = radioButton3.isChecked();
 
+
         //Quiz 2 Answer 1
         RadioButton Q2radioButton1 = (RadioButton) findViewById(R.id.Q2_R1);
         boolean quest2Answer1 = Q2radioButton1.isChecked();
@@ -63,19 +65,54 @@ public class MainActivity extends AppCompatActivity {
         RadioButton Q2radioButton3 = (RadioButton) findViewById(R.id.Q2_R3);
         boolean quest2Answer3 = Q2radioButton3.isChecked();
 
+
+        //Quiz 3 Answer 1
+        CheckBox checkBox1 = (CheckBox) findViewById(R.id.checkbox1);
+        boolean isGuilty1 = checkBox1.isChecked();
+
+        //Quiz 3 Answer 2
+        CheckBox checkBox2 = (CheckBox) findViewById(R.id.checkbox2);
+        boolean isGuilty2 = checkBox2.isChecked();
+
         //Quiz 3 Answer 3
+        CheckBox checkBox3 = (CheckBox) findViewById(R.id.checkbox3);
+        boolean isGuilty3 = checkBox3.isChecked();
+
+        //Quiz 3 Answer 4
+        CheckBox checkBox4 = (CheckBox) findViewById(R.id.checkbox4);
+        boolean isGuilty4 = checkBox4.isChecked();
+
+        //Quiz 3 Answer 5
+        CheckBox checkBox5 = (CheckBox) findViewById(R.id.checkbox5);
+        boolean isGuilty5 = checkBox5.isChecked();
+
+        //Quiz 3 Answer 6
+        CheckBox checkBox6 = (CheckBox) findViewById(R.id.checkbox6);
+        boolean isGuilty6 = checkBox6.isChecked();
+
+        //Quiz 3 Answer 7
+        CheckBox checkBox7 = (CheckBox) findViewById(R.id.checkbox7);
+        boolean isGuilty7 = checkBox7.isChecked();
+
+        //Quiz 3 Answer 8
+        CheckBox checkBox8 = (CheckBox) findViewById(R.id.checkbox8);
+        boolean isGuilty8 = checkBox8.isChecked();
+
+
+        //Quiz 4 One Answer Only
         EditText population = (EditText) findViewById(R.id.population);
         String populationNumber = population.getText().toString();
 
 
         checkAnswer1(quest1Answer1, quest1Answer2, quest1Answer3);
         checkAnswer2(quest2Answer1, quest2Answer2, quest2Answer3);
-        checkAnswer3();
+        checkAnswer3(isGuilty1, isGuilty2, isGuilty3, isGuilty4, isGuilty5, isGuilty6, isGuilty7, isGuilty8);
         checkAnswer4(populationNumber);
 
         String message = "Total Score: " + totalCorrectAnswered + " out of " + totalQuestions + "\n";
         message += "\nQ1: " + message1;
         message += "\nQ2: " + message2;
+        message += "\nQ3: " + message3;
         message += "\nQ4: " + message4;
         displayMessage(message);
 
@@ -133,6 +170,16 @@ public class MainActivity extends AppCompatActivity {
      *
      */
 
+    public String checkAnswer3 (boolean isGuilty1, boolean isGuilty2, boolean isGuilty3, boolean isGuilty4,
+                                boolean isGuilty5, boolean isGuilty6, boolean isGuilty7, boolean isGuilty8) {
+        if (isGuilty2 || isGuilty5 || isGuilty8 ) {
+            message3 = incorrect;
+        } else if (isGuilty1 && isGuilty3 && isGuilty4 && isGuilty6 && isGuilty7) {
+            message3 = correct;
+            totalCorrectAnswered++;
+        }
+        return message3;
+    }
 
 
     /**
@@ -143,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
 
     public String checkAnswer4 (String populationNumber ) {
 
-        if (populationNumber == population) {
+        if (populationNumber.equals(population)) {
             message4 = correct;
             totalCorrectAnswered++;
         } else {

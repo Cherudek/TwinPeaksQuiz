@@ -14,10 +14,8 @@
         <!--  Title Section   -->
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:background="@drawable/twin_peaks_title"
-            android:scaleType="centerCrop" />
+            style="@style/images"
+            android:background="@drawable/twin_peaks_title" />
 
         <!--  Question 1 Section   -->
 
@@ -29,9 +27,7 @@
                 android:text="@string/Q1" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:scaleType="centerCrop"
+                style="@style/images"
                 android:src="@drawable/laura_palmer_body" />
 
             <RadioGroup
@@ -72,9 +68,7 @@
                 android:text="@string/Q2" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="110dp"
-                android:scaleType="centerCrop"
+                style="@style/images"
                 android:src="@drawable/dale_cooper" />
 
             <RadioGroup
@@ -114,9 +108,7 @@
                 android:text="@string/Q3" />
 
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="110dp"
-                android:scaleType="centerCrop"
+                style="@style/images"
                 android:src="@drawable/suspects" />
 
             <CheckBox
@@ -155,48 +147,36 @@
                 android:text="Bob" />
 
             <CheckBox
-                style="@style/CheckBox"
                 android:id="@+id/checkbox8"
-                android:text="The Log Lady"/>
+                style="@style/CheckBox"
+                android:text="The Log Lady" />
 
 
         </LinearLayout>
 
-    <!--  Question 4 Section   -->
+        <!--  Question 4 Section   -->
 
-    <LinearLayout style="@style/questionLayout4">
+        <LinearLayout style="@style/questionLayout4">
 
-        <TextView
-            android:id="@+id/Q4"
-            style="@style/Questions"
-            android:text="@string/Q4"/>
+            <TextView
+                android:id="@+id/Q4"
+                style="@style/Questions"
+                android:text="@string/Q4" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="110dp"
-            android:scaleType="centerCrop"
-            android:src="@drawable/wellcome_twinpeaks" />
+            <ImageView
+                style="@style/images"
+                android:src="@drawable/wellcome_twinpeaks" />
 
-        <EditText
-            android:textColor="#fafafa"
-            android:id="@+id/population"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/population_no"
-            android:inputType="phone" />
+            <EditText
+                android:id="@+id/population"
+                style="@style/EditView"
+                android:hint="@string/population_no" />
 
         </LinearLayout>
-
-
-
 
         <Button
             android:id="@+id/submit"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:onClick="submitQuiz"
+            style="@style/submitButton"
             android:text="@string/submit_answers" />
 
     </LinearLayout>
