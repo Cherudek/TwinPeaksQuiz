@@ -81,6 +81,7 @@
         <item name="android:padding">16dp</item>
         <item name="android:gravity">center</item>
         <item name="android:inputType">phone</item>
+        <item name="android:textSize">24sp</item>
     </style>
 
     <style name="submitButton">
@@ -90,6 +91,17 @@
         <item name="android:gravity">center</item>
         <item name="android:onClick">submitQuiz</item>
         <item name="android:background">@color/Red700</item>
+        <item name="android:textColor">@color/textColorWhite</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="resetButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">resetQuiz</item>
+        <item name="android:background">@color/BlueGray700</item>
         <item name="android:textColor">@color/textColorWhite</item>
         <item name="android:textSize">18sp</item>
     </style>

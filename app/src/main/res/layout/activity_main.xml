@@ -31,7 +31,6 @@
                 android:src="@drawable/laura_palmer_body" />
 
             <RadioGroup
-
                 android:id="@+id/Answers1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -178,6 +177,11 @@
             android:id="@+id/submit"
             style="@style/submitButton"
             android:text="@string/submit_answers" />
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/resetButton"
+            android:text="@string/try_again" />
 
     </LinearLayout>
 </ScrollView>

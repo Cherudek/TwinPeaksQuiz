@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 /**
@@ -119,39 +120,37 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *
      * This Method checks whether Question 1 Answers are correct or not
      *
-     * @param quest1Answer1  Answer 1
-     * @param quest1Answer2  Answer 2
-     * @param quest1Answer3  Answer 3
+     * @param quest1Answer1 Answer 1
+     * @param quest1Answer2 Answer 2
+     * @param quest1Answer3 Answer 3
      * @return
      */
 
-    public String checkAnswer1 (boolean quest1Answer1, boolean quest1Answer2, boolean quest1Answer3) {
+    public String checkAnswer1(boolean quest1Answer1, boolean quest1Answer2, boolean quest1Answer3) {
 
         if (quest1Answer1) {
             message1 = incorrect;
-       } else if (quest1Answer2) {
-                message1 = correct;
-                totalCorrectAnswered++;
-            } else if (quest1Answer3) {
+        } else if (quest1Answer2) {
+            message1 = correct;
+            totalCorrectAnswered++;
+        } else if (quest1Answer3) {
             message1 = incorrect;
-               }
-
-        return message1;
         }
 
+        return message1;
+    }
+
     /**
-     *
      * This Method checks whether Question 2 Answers are correct or not
      *
-     * @param quest2Answer1  Answer 1
-     * @param quest2Answer2  Answer 2
-     * @param quest2Answer3  Answer 3
+     * @param quest2Answer1 Answer 1
+     * @param quest2Answer2 Answer 2
+     * @param quest2Answer3 Answer 3
      * @return
      */
-    public String checkAnswer2 (boolean quest2Answer1 , boolean quest2Answer2, boolean quest2Answer3) {
+    public String checkAnswer2(boolean quest2Answer1, boolean quest2Answer2, boolean quest2Answer3) {
 
         if (quest2Answer1) {
             message2 = incorrect;
@@ -165,14 +164,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     *
      * This method checks whether Question 3 is correct
-     *
      */
 
-    public String checkAnswer3 (boolean isGuilty1, boolean isGuilty2, boolean isGuilty3, boolean isGuilty4,
-                                boolean isGuilty5, boolean isGuilty6, boolean isGuilty7, boolean isGuilty8) {
-        if (isGuilty2 || isGuilty5 || isGuilty8 ) {
+    public String checkAnswer3(boolean isGuilty1, boolean isGuilty2, boolean isGuilty3, boolean isGuilty4,
+                               boolean isGuilty5, boolean isGuilty6, boolean isGuilty7, boolean isGuilty8) {
+        if (isGuilty2 || isGuilty5 || isGuilty8) {
             message3 = incorrect;
         } else if (isGuilty1 && isGuilty3 && isGuilty4 && isGuilty6 && isGuilty7) {
             message3 = correct;
@@ -183,12 +180,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
-     *
      * This method checks whether Question 4 is correct
-     *
      */
 
-    public String checkAnswer4 (String populationNumber ) {
+    public String checkAnswer4(String populationNumber) {
 
         if (populationNumber.equals(population)) {
             message4 = correct;
@@ -196,12 +191,13 @@ public class MainActivity extends AppCompatActivity {
         } else {
             message4 = incorrect;
         }
-           return message4;
+        return message4;
     }
 
 
     /**
      * This Method Displays the Result of The Quiz
+     *
      * @param message is the message of all the Answers
      */
 
@@ -210,6 +206,69 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG);
         toast.show();
 
+    }
+
+
+    /**
+     * This Method Resets all the Answers
+     */
+
+    public void resetQuiz(View view) {
+
+        //Reset the Score
+        totalCorrectAnswered = 0;
+
+        //Reset Messages
+
+        message1 = "";
+        message2 = "";
+        message3 = "";
+        message4 = "";
+
+
+        //Quiz 1 Reset
+        RadioGroup radioGroup1 = (RadioGroup) findViewById(R.id.Answers1);
+        radioGroup1.clearCheck();
+
+        //Quiz 2 Reset
+        RadioGroup radioGroup2 = (RadioGroup) findViewById(R.id.Answers2);
+        radioGroup2.clearCheck();
+
+        //Quiz 3 Answer 1 Reset
+        CheckBox checkBox1 = (CheckBox) findViewById(R.id.checkbox1);
+        checkBox1.setChecked(false);
+
+        //Quiz 3 Answer 2 Reset
+        CheckBox checkBox2 = (CheckBox) findViewById(R.id.checkbox2);
+        checkBox2.setChecked(false);
+
+        //Quiz 3 Answer 3 Reset
+        CheckBox checkBox3 = (CheckBox) findViewById(R.id.checkbox3);
+        checkBox3.setChecked(false);
+
+        //Quiz 3 Answer 4 Reset
+        CheckBox checkBox4 = (CheckBox) findViewById(R.id.checkbox4);
+        checkBox4.setChecked(false);
+
+        //Quiz 3 Answer 5 Reset
+        CheckBox checkBox5 = (CheckBox) findViewById(R.id.checkbox5);
+        checkBox5.setChecked(false);
+
+        //Quiz 3 Answer 6 Reset
+        CheckBox checkBox6 = (CheckBox) findViewById(R.id.checkbox6);
+        checkBox6.setChecked(false);
+
+        //Quiz 3 Answer 7 Reset
+        CheckBox checkBox7 = (CheckBox) findViewById(R.id.checkbox7);
+        checkBox7.setChecked(false);
+
+        //Quiz 3 Answer 8 Reset
+        CheckBox checkBox8 = (CheckBox) findViewById(R.id.checkbox8);
+        checkBox8.setChecked(false);
+
+        //Quiz 4 Reset
+        EditText editText = (EditText) findViewById(R.id.population);
+        editText.setText(null);
     }
 
 }
