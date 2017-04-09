@@ -15,16 +15,11 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    // Correct Answers to the Quiz
+    // Global Variables and Correct Answers to the Quiz
 
     String correct = "Correct";
     String incorrect = "Incorrect";
+    String message;
     String message1;
     String message2;
     String message3;
@@ -32,6 +27,49 @@ public class MainActivity extends AppCompatActivity {
     String population = "51.201";
     public int totalQuestions = 4;
     public int totalCorrectAnswered = 0;
+
+
+
+    /**
+     * This Method Saves Data from Vertical to Landscape
+     *
+     */
+
+    // Override the onSaveInstanceState method, this will write the variables values to the Bundle
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("totalCorrectAnsweredState", totalCorrectAnswered);
+        savedInstanceState.putString("messageState", message);
+    }
+
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        /* Restores  */
+
+        totalCorrectAnswered = savedInstanceState.getInt("totalCorrectAnsweredState");
+        message = savedInstanceState.getString("messageState");
+
+
+        /* Display values after restoring */
+
+        displayMessage(message);
+
+
+
+
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+
 
     /**
      * This Method Submits the Results of the Quiz
@@ -174,6 +212,8 @@ public class MainActivity extends AppCompatActivity {
         } else if (isGuilty1 && isGuilty3 && isGuilty4 && isGuilty6 && isGuilty7) {
             message3 = correct;
             totalCorrectAnswered++;
+        } else {
+            message3 = incorrect;
         }
         return message3;
     }
@@ -207,7 +247,6 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
 
     }
-
 
     /**
      * This Method Resets all the Answers

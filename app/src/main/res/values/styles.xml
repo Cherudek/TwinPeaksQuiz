@@ -41,6 +41,47 @@
         <item name="android:background">@color/Q4Layout</item>
     </style>
 
+    <style name="questionLayout5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/BlueGray700</item>
+    </style>
+
+    <style name="questionLayout6">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/Amber700</item>
+    </style>
+
+    <style name="questionLayout7">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/Cyan700</item>
+    </style>
+
+    <style name="questionLayout8">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/Pink700</item>
+    </style>
+
+    <style name="questionLayout9">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/Teal700</item>
+    </style>
+
+    <style name="questionLayout10">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/Yellow700</item>
+    </style>
 
 
 
@@ -70,7 +111,7 @@
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">16dp</item>
+        <item name="android:padding">8dp</item>
     </style>
 
     <style name="EditView">

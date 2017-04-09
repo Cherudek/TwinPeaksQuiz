@@ -10,4 +10,10 @@
     <color name="textColorWhite">#fafafa</color>
     <color name="Red700">#d32f2f</color>
     <color name="BlueGray700">#455a64</color>
+    <color name="Gray700">#616161</color>
+    <color name="Amber700">#ffa000</color>
+    <color name="Cyan700">#0097a7</color>
+    <color name="Pink700">#c2185b</color>
+    <color name="Teal700">#00796b</color>
+    <color name="Yellow700">#fbc02d</color>
 </resources>

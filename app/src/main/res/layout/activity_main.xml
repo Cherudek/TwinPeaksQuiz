@@ -173,6 +173,245 @@
 
         </LinearLayout>
 
+        <!--  Question 5 Section   -->
+
+        <LinearLayout style="@style/questionLayout5">
+
+            <TextView
+                android:id="@+id/Q5"
+                style="@style/Questions"
+                android:text="@string/Q5" />
+
+            <ImageView
+                style="@style/images"
+                android:src="@drawable/scary_bob" />
+
+            <RadioGroup
+                android:id="@+id/Answers5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Q5_R1"
+                    style="@style/RadioButtons"
+                    android:text="@string/maddie" />
+
+                <RadioButton
+                    android:id="@+id/Q5_R2"
+                    style="@style/RadioButtons"
+                    android:text="@string/sarah_palmer" />
+
+                <RadioButton
+                    android:id="@+id/Q5_R3"
+                    style="@style/RadioButtons"
+                    android:text="@string/donna" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!--  Question 6 Section   -->
+
+        <LinearLayout style="@style/questionLayout6">
+
+            <TextView
+                android:id="@+id/Q6"
+                style="@style/Questions"
+                android:text="@string/Q6" />
+
+            <ImageView
+                style="@style/images"
+                android:src="@drawable/leland_palmer" />
+
+            <RadioGroup
+                android:id="@+id/Answers6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Q6_R1"
+                    style="@style/RadioButtons"
+                    android:text="Mairzy Doats" />
+
+                <RadioButton
+                    android:id="@+id/Q6_R2"
+                    style="@style/RadioButtons"
+                    android:text="@string/falling_in_love" />
+
+                <RadioButton
+                    android:id="@+id/Q6_R3"
+                    style="@style/RadioButtons"
+                    android:text="@string/in_the_mood" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!--  Question 7  Section   -->
+
+        <LinearLayout style="@style/questionLayout7">
+
+            <TextView
+                android:id="@+id/Q7"
+                style="@style/Questions"
+                android:text="@string/Q7" />
+
+            <ImageView
+                style="@style/images"
+                android:src="@drawable/agent_cooper" />
+
+            <RadioGroup
+                android:id="@+id/Answers7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Q7_R1"
+                    style="@style/RadioButtons"
+                    android:text="@string/the_dwarf" />
+
+                <RadioButton
+                    android:id="@+id/Q7_R2"
+                    style="@style/RadioButtons"
+                    android:text="@string/the_giant" />
+
+                <RadioButton
+                    android:id="@+id/Q7_R3"
+                    style="@style/RadioButtons"
+                    android:text="@string/the_one_armed_man" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+        <!--  Question 8  Section   -->
+
+        <LinearLayout style="@style/questionLayout8">
+
+            <TextView
+                android:id="@+id/Q8"
+                style="@style/Questions"
+                android:text="@string/Q8" />
+
+            <ImageView
+                style="@style/images"
+                android:src="@drawable/one_eyed_jack" />
+
+            <RadioGroup
+                android:id="@+id/Answers8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Q8_R1"
+                    style="@style/RadioButtons"
+                    android:text="@string/ben_horne" />
+
+                <RadioButton
+                    android:id="@+id/Q8_R2"
+                    style="@style/RadioButtons"
+                    android:text="@string/leland_palmer" />
+
+                <RadioButton
+                    android:id="@+id/Q8_R3"
+                    style="@style/RadioButtons"
+                    android:text="@string/jerry_horne" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!--  Question 9  Section   -->
+
+        <LinearLayout style="@style/questionLayout9">
+
+            <TextView
+                android:id="@+id/Q9"
+                style="@style/Questions"
+                android:text="@string/Q9" />
+
+            <ImageView
+                style="@style/images"
+                android:src="@drawable/bob" />
+
+            <RadioGroup
+                android:id="@+id/Answers9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <RadioButton
+                    android:id="@+id/Q9_R1"
+                    style="@style/RadioButtons"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/bob_set_designer" />
+
+                <RadioButton
+                    android:id="@+id/Q9_R2"
+                    style="@style/RadioButtons"
+                    android:text="@string/bob_gray_hair" />
+
+                <RadioButton
+                    android:id="@+id/Q9_R3"
+                    style="@style/RadioButtons"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/bob_the_murder" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!--  Question 10  Section   -->
+
+        <LinearLayout style="@style/questionLayout10">
+
+            <TextView
+                android:id="@+id/Q10"
+                style="@style/Questions"
+                android:text="@string/Q10" />
+
+            <ImageView
+                style="@style/images"
+                android:src="@drawable/major_briggs" />
+
+            <RadioGroup
+                android:id="@+id/Answers10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Q10_R1"
+                    style="@style/RadioButtons"
+                    android:text="@string/owls" />
+
+                <RadioButton
+                    android:id="@+id/Q10_R2"
+                    style="@style/RadioButtons"
+                    android:text="@string/logs" />
+
+                <RadioButton
+                    android:id="@+id/Q10_R3"
+                    style="@style/RadioButtons"
+                    android:text="@string/trees" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
         <Button
             android:id="@+id/submit"
             style="@style/submitButton"

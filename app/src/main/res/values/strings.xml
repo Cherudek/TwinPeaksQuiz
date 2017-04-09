@@ -15,5 +15,28 @@
     <string name="Q4">What is the population count on Twin Peaks town sign which appeared every episode?</string>
     <string name="population_no">__.___</string>
     <string name="try_again">Try Again!</string>
+    <string name="Q5">Who first has a vision of scary BOB?</string>
+    <string name="maddie">Maddie</string>
+    <string name="sarah_palmer">Sarah Palmer</string>
+    <string name="donna">Donna</string>
+    <string name="Q6">What is the song Leland Palmer sings over and over after his hair turns white?</string>
+    <string name="falling_in_love">Falling in Love</string>
+    <string name="in_the_mood">In the Mood</string>
+    <string name="Q7">Who tells Agent Cooper the identity of Laura\'s killer?</string>
+    <string name="the_dwarf">The Dwarf</string>
+    <string name="the_giant">The Giant</string>
+    <string name="the_one_armed_man">The One-Armed Man</string>
+    <string name="Q8">Who owns brothel One Eyed Jack\'s?</string>
+    <string name="jerry_horne">Jerry Horne</string>
+    <string name="leland_palmer">Leland Palmer</string>
+    <string name="ben_horne">Ben Horne</string>
+    <string name="Q9">What was unusual about the actor who plays Bob (Frank Silva)?</string>
+    <string name="bob_set_designer">He was a set designer picked by David Lynch to play the killer.</string>
+    <string name="bob_gray_hair">His hair turned grey from the stress of the creepy story.</string>
+    <string name="bob_the_murder">He was arrested in real life for murder when the show ended.</string>
+    <string name="Q10">Major Briggs tells Agent Cooper: The (____) are not what they seem!</string>
+    <string name="owls">Owls</string>
+    <string name="logs">Logs</string>
+    <string name="trees">Trees</string>
 
 </resources>
