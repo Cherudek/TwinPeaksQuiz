@@ -24,8 +24,15 @@ public class MainActivity extends AppCompatActivity {
     String message2;
     String message3;
     String message4;
+    String message5;
+    String message6;
+    String message7;
+    String message8;
+    String message9;
+    String message10;
+
     String population = "51.201";
-    public int totalQuestions = 4;
+    public int totalQuestions = 10;
     public int totalCorrectAnswered = 0;
 
 
@@ -142,17 +149,110 @@ public class MainActivity extends AppCompatActivity {
         EditText population = (EditText) findViewById(R.id.population);
         String populationNumber = population.getText().toString();
 
+        //Quiz 5 Answer 1
+        RadioButton Q5RadioButton1 =(RadioButton) findViewById(R.id.Q5_R1);
+        Boolean quest5Answer1 = Q5RadioButton1.isChecked();
+
+        //Quiz 5 Answer 2
+        RadioButton Q5RadioButton2 =(RadioButton) findViewById(R.id.Q5_R2);
+        Boolean quest5Answer2 = Q5RadioButton2.isChecked();
+
+        //Quiz 5 Answer 3
+        RadioButton Q5RadioButton3 =(RadioButton) findViewById(R.id.Q5_R3);
+        Boolean quest5Answer3 = Q5RadioButton3.isChecked();
+
+        //Quiz 6 Answer 1
+        RadioButton Q6RadioButton1 =(RadioButton) findViewById(R.id.Q6_R1);
+        Boolean quest6Answer1 = Q6RadioButton1.isChecked();
+
+        //Quiz 6 Answer 2
+        RadioButton Q6RadioButton2 =(RadioButton) findViewById(R.id.Q6_R2);
+        Boolean quest6Answer2 = Q6RadioButton2.isChecked();
+
+        //Quiz 6 Answer 3
+        RadioButton Q6RadioButton3 =(RadioButton) findViewById(R.id.Q6_R3);
+        Boolean quest6Answer3 = Q6RadioButton3.isChecked();
+
+        //Quiz 7 Answer 1
+        RadioButton Q7RadioButton1 =(RadioButton) findViewById(R.id.Q7_R1);
+        Boolean quest7Answer1 = Q7RadioButton1.isChecked();
+
+        //Quiz 7 Answer 2
+        RadioButton Q7RadioButton2 =(RadioButton) findViewById(R.id.Q7_R2);
+        Boolean quest7Answer2 = Q7RadioButton2.isChecked();
+
+        //Quiz 7 Answer 3
+        RadioButton Q7RadioButton3 =(RadioButton) findViewById(R.id.Q7_R3);
+        Boolean quest7Answer3 = Q7RadioButton3.isChecked();
+
+        //Quiz 8 Answer 1
+        RadioButton Q8RadioButton1 =(RadioButton) findViewById(R.id.Q8_R1);
+        Boolean quest8Answer1 = Q8RadioButton1.isChecked();
+
+        //Quiz 8 Answer 2
+        RadioButton Q8RadioButton2 =(RadioButton) findViewById(R.id.Q8_R2);
+        Boolean quest8Answer2 = Q8RadioButton2.isChecked();
+
+        //Quiz 8 Answer 3
+        RadioButton Q8RadioButton3 =(RadioButton) findViewById(R.id.Q8_R3);
+        Boolean quest8Answer3 = Q8RadioButton3.isChecked();
+
+        //Quiz 9 Answer 1
+        RadioButton Q9RadioButton1 =(RadioButton) findViewById(R.id.Q9_R1);
+        Boolean quest9Answer1 = Q9RadioButton1.isChecked();
+
+        //Quiz 9 Answer 2
+        RadioButton Q9RadioButton2 =(RadioButton) findViewById(R.id.Q9_R2);
+        Boolean quest9Answer2 = Q9RadioButton2.isChecked();
+
+        //Quiz 9 Answer 3
+        RadioButton Q9RadioButton3 =(RadioButton) findViewById(R.id.Q9_R3);
+        Boolean quest9Answer3 = Q9RadioButton3.isChecked();
+
+        //Quiz 10 Answer 1
+        RadioButton Q10RadioButton1 =(RadioButton) findViewById(R.id.Q10_R1);
+        Boolean quest10Answer1 = Q10RadioButton1.isChecked();
+
+        //Quiz 10 Answer 2
+        RadioButton Q10RadioButton2 =(RadioButton) findViewById(R.id.Q10_R2);
+        Boolean quest10Answer2 = Q10RadioButton2.isChecked();
+
+        //Quiz 10 Answer 3
+        RadioButton Q10RadioButton3 =(RadioButton) findViewById(R.id.Q10_R3);
+        Boolean quest10Answer3 = Q10RadioButton3.isChecked();
+
+
+
 
         checkAnswer1(quest1Answer1, quest1Answer2, quest1Answer3);
         checkAnswer2(quest2Answer1, quest2Answer2, quest2Answer3);
         checkAnswer3(isGuilty1, isGuilty2, isGuilty3, isGuilty4, isGuilty5, isGuilty6, isGuilty7, isGuilty8);
         checkAnswer4(populationNumber);
 
+
+        checkAnswer5(quest5Answer1, quest5Answer2, quest5Answer3);
+        checkAnswer6(quest6Answer1, quest6Answer2, quest6Answer3);
+        checkAnswer7(quest7Answer1, quest7Answer2, quest7Answer3);
+        checkAnswer8(quest8Answer1, quest8Answer2, quest8Answer3);
+        checkAnswer9(quest9Answer1, quest9Answer2, quest9Answer3);
+        checkAnswer10(quest10Answer1, quest10Answer2, quest10Answer3);
+
+
+
+
+
+
         String message = "Total Score: " + totalCorrectAnswered + " out of " + totalQuestions + "\n";
         message += "\nQ1: " + message1;
         message += "\nQ2: " + message2;
         message += "\nQ3: " + message3;
         message += "\nQ4: " + message4;
+        message += "\nQ5: " + message5;
+        message += "\nQ6: " + message6;
+        message += "\nQ7: " + message7;
+        message += "\nQ8: " + message8;
+        message += "\nQ9: " + message9;
+        message += "\nQ10 " + message10;
         displayMessage(message);
 
     }
@@ -236,6 +336,145 @@ public class MainActivity extends AppCompatActivity {
 
 
     /**
+     * This Method checks whether Question 5 Answers are correct or not
+     *
+     * @param quest5Answer1 Answer 1
+     * @param quest5Answer2 Answer 2
+     * @param quest5Answer3 Answer 3
+     * @return
+     */
+
+    public String checkAnswer5(boolean quest5Answer1, boolean quest5Answer2, boolean quest5Answer3) {
+
+        if (quest5Answer1) {
+            message5 = incorrect;
+        } else if (quest5Answer2) {
+            message5 = correct;
+            totalCorrectAnswered++;
+        } else if (quest5Answer3) {
+            message5 = incorrect;
+        }
+
+        return message5;
+    }
+
+    /**
+     * This Method checks whether Question 1 Answers are correct or not
+     *
+     * @param quest6Answer1 Answer 1
+     * @param quest6Answer2 Answer 2
+     * @param quest6Answer3 Answer 3
+     * @return message6 Answer selected
+     */
+
+    public String checkAnswer6(boolean quest6Answer1, boolean quest6Answer2, boolean quest6Answer3) {
+
+        if (quest6Answer1) {
+            message6 = correct;
+            totalCorrectAnswered++;
+        } else if (quest6Answer2) {
+            message6 = incorrect;
+        } else if (quest6Answer3) {
+            message6 = incorrect;
+        }
+
+        return message6;
+    }
+
+    /**
+     * This Method checks whether Question 7 Answers are correct or not
+     *
+     * @param quest7Answer1 Answer 1
+     * @param quest7Answer2 Answer 2
+     * @param quest7Answer3 Answer 3
+     * @return
+     */
+
+    public String checkAnswer7(boolean quest7Answer1, boolean quest7Answer2, boolean quest7Answer3) {
+
+        if (quest7Answer1) {
+            message7 = incorrect;
+        } else if (quest7Answer2) {
+            message7 = incorrect;
+        } else if (quest7Answer3) {
+            message7 = correct;
+            totalCorrectAnswered++;
+        }
+
+        return message7;
+    }
+
+    /**
+     * This Method checks whether Question 8 Answers are correct or not
+     *
+     * @param quest8Answer1 Answer 1
+     * @param quest8Answer2 Answer 2
+     * @param quest8Answer3 Answer 3
+     * @return
+     */
+
+    public String checkAnswer8(boolean quest8Answer1, boolean quest8Answer2, boolean quest8Answer3) {
+
+        if (quest8Answer1) {
+            message8 = correct;
+            totalCorrectAnswered++;
+        } else if (quest8Answer2) {
+            message8 = incorrect;
+        } else if (quest8Answer3) {
+            message8 = incorrect;
+        }
+
+        return message8;
+    }
+
+    /**
+     * This Method checks whether Question 9 Answers are correct or not
+     *
+     * @param quest9Answer1 Answer 1
+     * @param quest9Answer2 Answer 2
+     * @param quest9Answer3 Answer 3
+     * @return
+     */
+
+    public String checkAnswer9(boolean quest9Answer1, boolean quest9Answer2, boolean quest9Answer3) {
+
+        if (quest9Answer1) {
+            message9 = correct;
+            totalCorrectAnswered++;
+        } else if (quest9Answer2) {
+            message9 = incorrect;
+        } else if (quest9Answer3) {
+            message9 = incorrect;
+        }
+
+        return message9;
+    }
+
+    /**
+     * This Method checks whether Question 10 Answers are correct or not
+     *
+     * @param quest10Answer1 Answer 1
+     * @param quest10Answer2 Answer 2
+     * @param quest10Answer3 Answer 3
+     * @return
+     */
+
+    public String checkAnswer10(boolean quest10Answer1, boolean quest10Answer2, boolean quest10Answer3) {
+
+        if (quest10Answer1) {
+            message10 = correct;
+            totalCorrectAnswered++;
+        } else if (quest10Answer2) {
+            message10 = incorrect;
+        } else if (quest10Answer3) {
+            message10 = incorrect;
+        }
+
+        return message10;
+    }
+
+
+    /**
      * This Method Displays the Result of The Quiz
      *
      * @param message is the message of all the Answers
@@ -263,6 +502,12 @@ public class MainActivity extends AppCompatActivity {
         message2 = "";
         message3 = "";
         message4 = "";
+        message5 = "";
+        message6 = "";
+        message7 = "";
+        message8 = "";
+        message9 = "";
+        message10 = "";
 
 
         //Quiz 1 Reset
@@ -308,6 +553,32 @@ public class MainActivity extends AppCompatActivity {
         //Quiz 4 Reset
         EditText editText = (EditText) findViewById(R.id.population);
         editText.setText(null);
+
+        //Quiz 5 Reset
+        RadioGroup radioGroup5 = (RadioGroup) findViewById(R.id.Answers5);
+        radioGroup5.clearCheck();
+
+        //Quiz 6 Reset
+        RadioGroup radioGroup6 = (RadioGroup) findViewById(R.id.Answers6);
+        radioGroup6.clearCheck();
+
+        //Quiz 7 Reset
+        RadioGroup radioGroup7 = (RadioGroup) findViewById(R.id.Answers7);
+        radioGroup7.clearCheck();
+
+        //Quiz 8 Reset
+        RadioGroup radioGroup8 = (RadioGroup) findViewById(R.id.Answers8);
+        radioGroup8.clearCheck();
+
+        //Quiz 9 Reset
+        RadioGroup radioGroup9 = (RadioGroup) findViewById(R.id.Answers9);
+        radioGroup9.clearCheck();
+
+        //Quiz 10 Reset
+        RadioGroup radioGroup10 = (RadioGroup) findViewById(R.id.Answers10);
+        radioGroup10.clearCheck();
+
+
     }
 
 }
